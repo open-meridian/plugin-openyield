@@ -1,0 +1,402 @@
+{
+ "about": "Synthetic answers in the shape of OpenYield's public Data Services documentation (docs.openyld.com/dataapi, OpenAPI 1.3.0, read 2026-10-30): its examples where it gives them, made-up values in their shape for the sample day, 30 October 2026. Not OpenYield's data.",
+ "securities": {
+  "US037833EW60": {
+   "daily": {
+    "cusip": "037833EW6",
+    "isin": "US037833EW60",
+    "name": "AAPL 4.85 2053-05-10",
+    "prices": [
+     {
+      "price": "94.745",
+      "price_date": "2026-10-30",
+      "yield": "5.215604"
+     },
+     {
+      "price": "94.69500",
+      "price_date": "2026-10-29",
+      "yield": "5.218877"
+     },
+     {
+      "price": "94.58375",
+      "price_date": "2026-10-28",
+      "yield": "5.226112"
+     },
+     {
+      "price": "94.70125",
+      "price_date": "2026-10-27",
+      "yield": "5.218340"
+     },
+     {
+      "price": "94.61250",
+      "price_date": "2026-10-26",
+      "yield": "5.224015"
+     }
+    ]
+   },
+   "intraday": {
+    "cusip": "037833EW6",
+    "isin": "US037833EW60",
+    "name": "AAPL 4.85 2053-05-10",
+    "prices": [
+     {
+      "as_at": "2026-10-30T13:30:00Z",
+      "price": "94.71250",
+      "yield": "5.217700"
+     },
+     {
+      "as_at": "2026-10-30T19:50:00Z",
+      "price": "94.745000000000000001",
+      "yield": "5.215604"
+     }
+    ]
+   },
+   "prints": {
+    "cusip": "037833EW6",
+    "isin": "US037833EW60",
+    "name": "AAPL 4.85 2053-05-10",
+    "prints": [
+     {
+      "as_at": "2026-10-30T10:02:11",
+      "is_ats": false,
+      "parties": "D-C",
+      "price": "94.512",
+      "quantity": "25",
+      "sequence": 3104472,
+      "side": "Sell",
+      "yield": "5.2312"
+     },
+     {
+      "as_at": "2026-10-30T11:47:39",
+      "is_ats": false,
+      "parties": "D-D",
+      "price": "94.700",
+      "quantity": "5000.001",
+      "sequence": 3110958,
+      "side": "Buy",
+      "yield": "5.2190"
+     },
+     {
+      "as_at": "2026-10-30T14:15:03",
+      "is_ats": true,
+      "parties": "D-A",
+      "price": "94.760",
+      "quantity": "50",
+      "sequence": 3121006,
+      "side": "Buy",
+      "yield": "5.2150"
+     }
+    ]
+   },
+   "reference": {
+    "security": {
+     "accrual_date": "2023-05-10",
+     "asset": "CorporateBond",
+     "benchmark_isin": null,
+     "borrower": "Apple Inc.",
+     "corporate_bond_detail": {
+      "industry": "Electronic Computer Manufacturing",
+      "sector": "Manufacturing",
+      "secured": "Unsecured",
+      "seniority": "Senior"
+     },
+     "coupon": "4.85",
+     "cusip": "037833EW6",
+     "figi": "BBG01G3PQ9C7",
+     "frequency": "SemiAnnual",
+     "grade": "IG",
+     "income": "Fixed",
+     "isin": "US037833EW60",
+     "issue_notional": null,
+     "issuer": "Apple Inc.",
+     "maturity_date": "2053-05-10",
+     "municipal_bond_detail": null,
+     "name": "AAPL 4.85 2053-05-10",
+     "next_call_date": null,
+     "next_coupon_date": null,
+     "next_put_date": null,
+     "next_sink_date": null,
+     "outstanding_notional": null,
+     "shortcut": null
+    }
+   },
+   "top_of_book": {
+    "as_of": "2026-10-30T19:55:00Z",
+    "result": {
+     "ask_price": "94.96",
+     "ask_quantity": "[0-100)",
+     "ask_yield": "5.200",
+     "asset": "CorporateBond",
+     "bid_price": "94.53",
+     "bid_quantity": "[100-1000)",
+     "bid_yield": "5.230",
+     "coupon": "4.85",
+     "cusip": "037833EW6",
+     "grade": "IG",
+     "industry": "Electronic Computer Manufacturing",
+     "interest_rate_type": "Fixed",
+     "is_callable": true,
+     "is_make_whole": true,
+     "is_putable": false,
+     "isin": "US037833EW60",
+     "issue_date": "2023-05-10",
+     "maturity": "2053-05-10",
+     "name": "AAPL 4.85 2053-05-10",
+     "sector": "Manufacturing",
+     "state": null
+    }
+   }
+  },
+  "US6500441A14": {
+   "daily": {
+    "cusip": "6500441A1",
+    "isin": "US6500441A14",
+    "name": "NYS DORM 5 2045-03-15",
+    "prices": [
+     {
+      "price": "104.5",
+      "price_date": "2026-10-30",
+      "yield": "0"
+     }
+    ]
+   },
+   "intraday": {
+    "cusip": "6500441A1",
+    "isin": "US6500441A14",
+    "name": "NYS DORM 5 2045-03-15",
+    "prices": []
+   },
+   "prints": {
+    "cusip": "6500441A1",
+    "isin": "US6500441A14",
+    "name": "NYS DORM 5 2045-03-15",
+    "prints": [
+     {
+      "as_at": "2026-10-29T14:22:10",
+      "is_ats": false,
+      "parties": "Customer",
+      "price": "101.250",
+      "quantity": "100",
+      "sequence": 1504327,
+      "side": "Buy",
+      "yield": "4.5210"
+     },
+     {
+      "as_at": "2026-10-30T10:40:55",
+      "is_ats": false,
+      "parties": "Dealer",
+      "price": "104.300",
+      "quantity": "25",
+      "sequence": 1511840,
+      "side": "Sell",
+      "yield": "4.4960"
+     }
+    ]
+   },
+   "reference": {
+    "security": {
+     "accrual_date": "2025-03-20",
+     "asset": "MunicipalBond",
+     "benchmark_isin": null,
+     "borrower": "Dormitory Authority of the State of New York",
+     "corporate_bond_detail": null,
+     "coupon": "5.0",
+     "cusip": "6500441A1",
+     "figi": null,
+     "frequency": "SemiAnnual",
+     "grade": "IG",
+     "income": "Fixed",
+     "isin": "US6500441A14",
+     "issue_notional": null,
+     "issuer": "Dormitory Authority of the State of New York",
+     "maturity_date": "2045-03-15",
+     "municipal_bond_detail": {
+      "state": "NY",
+      "tax_status": "TaxExempt"
+     },
+     "name": "NYS DORM 5 2045-03-15",
+     "next_call_date": null,
+     "next_coupon_date": null,
+     "next_put_date": null,
+     "next_sink_date": null,
+     "outstanding_notional": null,
+     "shortcut": null
+    }
+   },
+   "top_of_book": {
+    "as_of": "2026-10-30T19:55:00Z",
+    "result": {
+     "ask_price": "104.875",
+     "ask_quantity": "[0-100)",
+     "ask_yield": "4.455",
+     "asset": "MunicipalBond",
+     "bid_price": "104.125",
+     "bid_quantity": "[0-100)",
+     "bid_yield": "4.512",
+     "coupon": "5.0",
+     "cusip": "6500441A1",
+     "grade": "IG",
+     "industry": null,
+     "interest_rate_type": "Fixed",
+     "is_callable": true,
+     "is_make_whole": false,
+     "is_putable": false,
+     "isin": "US6500441A14",
+     "issue_date": "2025-03-20",
+     "maturity": "2045-03-15",
+     "name": "NYS DORM 5 2045-03-15",
+     "sector": null,
+     "state": "NY"
+    }
+   }
+  },
+  "US91282CQB09": {
+   "daily": {
+    "cusip": "91282CQB0",
+    "isin": "US91282CQB09",
+    "name": "T 3.375 2028-02-29",
+    "prices": [
+     {
+      "price": "99.40234375",
+      "price_date": "2026-10-30",
+      "yield": "3.905"
+     }
+    ]
+   },
+   "intraday": {
+    "cusip": "91282CQB0",
+    "isin": "US91282CQB09",
+    "name": "T 3.375 2028-02-29",
+    "prices": []
+   },
+   "prints": {
+    "cusip": "91282CQB0",
+    "isin": "US91282CQB09",
+    "name": "T 3.375 2028-02-29",
+    "prints": []
+   },
+   "reference": {
+    "security": {
+     "accrual_date": "2026-02-28",
+     "asset": "GovernmentBond",
+     "benchmark_isin": null,
+     "borrower": "United States Treasury",
+     "corporate_bond_detail": null,
+     "coupon": "3.375",
+     "cusip": "91282CQB0",
+     "figi": "BBG01S1X2F64",
+     "frequency": "SemiAnnual",
+     "grade": "IG",
+     "income": "Fixed",
+     "isin": "US91282CQB09",
+     "issue_notional": null,
+     "issuer": "United States Treasury",
+     "maturity_date": "2028-02-29",
+     "municipal_bond_detail": null,
+     "name": "T 3.375 2028-02-29",
+     "next_call_date": null,
+     "next_coupon_date": null,
+     "next_put_date": null,
+     "next_sink_date": null,
+     "outstanding_notional": null,
+     "shortcut": null
+    }
+   },
+   "top_of_book": {
+    "as_of": "2026-10-30T19:55:00Z",
+    "result": {
+     "ask_price": null,
+     "ask_quantity": null,
+     "ask_yield": null,
+     "asset": "GovernmentBond",
+     "bid_price": "99.390625",
+     "bid_quantity": "[1000+]",
+     "bid_yield": "3.912",
+     "coupon": "3.375",
+     "cusip": "91282CQB0",
+     "grade": null,
+     "industry": null,
+     "interest_rate_type": "Fixed",
+     "is_callable": false,
+     "is_make_whole": false,
+     "is_putable": false,
+     "isin": "US91282CQB09",
+     "issue_date": "2026-02-28",
+     "maturity": "2028-02-29",
+     "name": "T 3.375 2028-02-29",
+     "sector": null,
+     "state": null
+    }
+   }
+  }
+ },
+ "today": "2026-10-30",
+ "yield_curve": {
+  "as_of": "2026-10-30T19:55:00Z",
+  "benchmarks": [
+   {
+    "current": "3.912",
+    "cusip": "91282CQB0",
+    "isin": "US91282CQB09",
+    "name": "T 3.375 2028-02-29",
+    "previous": "3.983",
+    "shortcut": "CT02",
+    "tenor": "2.0"
+   },
+   {
+    "current": "3.881",
+    "cusip": "91282CQA2",
+    "isin": "US91282CQA26",
+    "name": "T 4.000 2029-02-15",
+    "previous": "3.954",
+    "shortcut": "CT03",
+    "tenor": "3.0"
+   },
+   {
+    "current": "3.945",
+    "cusip": "91282CQD6",
+    "isin": "US91282CQD64",
+    "name": "T 4.125 2031-02-15",
+    "previous": "4.021",
+    "shortcut": "CT05",
+    "tenor": "5.0"
+   },
+   {
+    "current": "4.096",
+    "cusip": "91282CQE4",
+    "isin": "US91282CQE48",
+    "name": "T 4.250 2033-02-15",
+    "previous": "4.155",
+    "shortcut": "CT07",
+    "tenor": "7.0"
+   },
+   {
+    "current": "4.262",
+    "cusip": "91282CQF1",
+    "isin": "US91282CQF13",
+    "name": "T 4.375 2036-02-15",
+    "previous": "4.301",
+    "shortcut": "CT10",
+    "tenor": "10.0"
+   },
+   {
+    "current": "4.790",
+    "cusip": "912810UH9",
+    "isin": "US912810UH90",
+    "name": "T 4.750 2046-02-15",
+    "previous": "4.811",
+    "shortcut": "CT20",
+    "tenor": "20.0"
+   },
+   {
+    "current": "4.821",
+    "cusip": "912810UG1",
+    "isin": "US912810UG18",
+    "name": "T 4.750 2056-02-15",
+    "previous": "4.845",
+    "shortcut": "CT30",
+    "tenor": "30.0"
+   }
+  ]
+ }
+}
