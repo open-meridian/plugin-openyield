@@ -1,0 +1,14 @@
+{#- Connection, at admin: the data role's (meridian/roles/data/connection.html),
+    with OpenYield's nuance at its blocks only -- in "Key", "Access" (a
+    token, never a password) and "Securities": how many are listed and
+    resolved, its detail each security's record. No value: quotes, prices,
+    rates and prints are the reading roles'. -#}
+{% extends "meridian/roles/data/connection.html" %}
+{% block vendor_rows %}{% if section == "Key" %}
+{{ om.row("Access", "Token", data.access) }}
+{% set resolved = data.securities|selectattr("record")|list|length %}
+<tr data-securities="{{ data.securities|length }}"><th scope="row">Securities</th><td>{{ resolved }} of {{ data.securities|length }} resolved</td><td class="more"><details class="row-detail" name="facts"><summary aria-label="Details of Securities">…</summary><div class="row-detail-pop"><h3>Securities</h3><dl>
+{% for s in data.securities %}<dt><code>{{ s.security }}</code></dt><dd>{{ s.description or "No reference read" }}; record {{ s.record or s.miss or "none yet" }}</dd>
+{% else %}<dt>None listed</dt><dd>List ISINs, CUSIPs or FIGIs in Settings.</dd>
+{% endfor %}</dl></div></details></td></tr>
+{% endif %}{% endblock %}

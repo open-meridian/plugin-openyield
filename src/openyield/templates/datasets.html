@@ -1,0 +1,7 @@
+{#- Datasets, at admin: the data role's (meridian/roles/data/datasets.html),
+    with OpenYield's nuance at its blocks only -- what OpenYield stated that
+    was not recorded, or the lake refused, and the benchmark curve's record
+    on the marketplace's row. No value: those are the reading roles'. -#}
+{% extends "meridian/roles/data/datasets.html" %}
+{% block vendor_notices %}{% if data.not_recorded %}<div class="notice warn" role="status">{{ data.not_recorded|length }} kinds of value not recorded <details class="row-detail" name="unread"><summary aria-label="What was not recorded">…</summary><div class="row-detail-pop"><h3>Not recorded</h3><ul>{% for each in data.not_recorded %}<li>{{ each }}</li>{% endfor %}</ul></div></details></div>{% endif %}{% endblock %}
+{% block vendor_columns %}{% if row is none %}<th class="wide-only">Records</th>{% else %}<td class="wide-only">{% if row.dataset.endswith(":marketplace") %}{% if data.curve_record %}<code title="OpenYield's benchmark curve">{{ data.curve_record }}</code>{% else %}None yet{% endif %}{% else %}Listed securities{% endif %}</td>{% endif %}{% endblock %}
