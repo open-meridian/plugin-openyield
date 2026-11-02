@@ -50,15 +50,14 @@ def _want(want_id: str, subject: str) -> Heard[ops.ObservationsWantedEvent]:
 
 def _lake(recorder: Recorder) -> Lake:
     own: set[str] = set()
+    made: list[str] = []
 
     def resolve(params: ops.ResolveIdentifierParams) -> ops.ResolveIdentifierResult:
-        made = f"LCL-PREVIEW-{len(own) + 1}"
-        if any(i.source == "openyield" for i in params.identifiers):
-            own.add(made)
-        else:
-            own.add("")
-            made = f"INS-PREVIEW-{len(own)}"
-        return ops.ResolveIdentifierResult(found=True, instrument_id=made)
+        local = any(i.source == "openyield" for i in params.identifiers)
+        made.append(f"{'LCL' if local else 'INS'}-PREVIEW-{len(made) + 1}")
+        if local:
+            own.add(made[-1])
+        return ops.ResolveIdentifierResult(found=True, instrument_id=made[-1])
 
     def record(params: ops.ResolveInstrumentParams) -> ops.ResolveInstrumentResult:
         if params.instrument_id in own:
