@@ -18,7 +18,12 @@ def test_three_datasets_each_naming_its_underlying_source() -> None:
     assert (msrb.vendor, msrb.aggregator) == ("MSRB", "OpenYield")
     assert trace.declared_delay_ns == 4 * 3600 * 10**9
     for dataset in DECLARATION.catalogue:
-        assert dataset.licence_default is None  # terms are the deployment's (1030 to 1032)
+        # Contract 30 (ruling 1032): the terms in words, never a licence.
+        assert "Data Services Agreement" in dataset.terms_and_pricing
+        assert len(dataset.terms_and_pricing) <= 2000 and dataset.gap_recovery == "backfill"
+    # TRACE's prints follow TRACE's system hours; the ATS's and MSRB's none yet.
+    assert [d.sessions_calendar_id for d in DECLARATION.catalogue] == [
+        "", "CAL-01M6CDQRFE48WF62BG9KFJEEEB", ""]  # fmt: skip
 
 
 def test_the_token_is_a_token_and_the_securities_are_identifiers() -> None:

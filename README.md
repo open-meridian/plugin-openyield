@@ -2,7 +2,7 @@
 
 OpenYield's bond data in an [Open Meridian](https://open-meridian.dev)
 deployment: an Apache-2.0 data plugin, in Python on the open-meridian SDK
-0.35.3 (contract v29), built from OpenYield's public Data Services
+0.36.0 (contract 30), built from OpenYield's public Data Services
 documentation.
 
 It records, for the securities a deployment lists and any a reader wants:
