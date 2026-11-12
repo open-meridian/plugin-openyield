@@ -4,8 +4,9 @@
 
 The terms under which you use OpenYield's data are in your OpenYield Data
 Services Agreement, which is not public, and are between you and OpenYield
-Trading LLC. This plugin declares no default licence; the deployment admin
-sets each dataset's licence on the Data sources page. What follows describes
+Trading LLC. Each dataset describes them in words on the Data sources page;
+the plugin declares no licence: the deployment admin sets each dataset's
+licence there. What follows describes
 what OpenYield publishes, as read on 30 October 2026, to help you and your
 agent decide; it is not legal advice.
 
